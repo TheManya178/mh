@@ -599,8 +599,8 @@ function OrionLib:MakeWindow(WindowConfig)
 
 	local MainWindow = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 10), {
 		Parent = Orion,
-		Position = UDim2.new(0, 0, 0, -10),
-		Size = UDim2.new(0, 440, 0, 210),
+		Position = UDim2.new(0, 0, 0, -5),
+		Size = UDim2.new(0, 436, 0, 210),
 		ClipsDescendants = true
 	}), {
 		SetChildren(SetProps(MakeElement("TFrame"), {
@@ -656,7 +656,7 @@ function OrionLib:MakeWindow(WindowConfig)
 
 	AddConnection(MinimizeBtn.MouseButton1Up, function()
 		if Minimized then
-			TweenService:Create(MainWindow, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Size = UDim2.new(0, 430, 0, 210)}):Play()
+			TweenService:Create(MainWindow, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {Size = UDim2.new(0, 436, 0, 210)}):Play()
 			MinimizeBtn.Ico.Image = "rbxassetid://7072719338"
 			Minimized = false
 			wait(0.5)
