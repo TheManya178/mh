@@ -599,7 +599,7 @@ function OrionLib:MakeWindow(WindowConfig)
 
 	local MainWindow = AddThemeObject(SetChildren(SetProps(MakeElement("RoundFrame", Color3.fromRGB(255, 255, 255), 0, 10), {
 		Parent = Orion,
-		Position = UDim2.new(0.263157904, 0, 0.298927605, 0),
+		Position = UDim2.new(0, 0, 0, 0),
 		Size = UDim2.new(0, 430, 0, 210),
 		ClipsDescendants = true
 	}), {
